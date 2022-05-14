@@ -1,0 +1,34 @@
+h1{
+    border: solid darkblue 2px;
+    color: darkblue;
+}
+
+.main{
+    display: flex;
+}
+
+
+#list{
+flex: 5;
+background-color: #ffa500;
+min-height:  calc(100vh - 89px);
+}
+
+#form{
+    flex: 3;
+    background-color: limegreen;
+    min-height: calc(100vh - 89px);
+}
+.iImportant{
+    font-size: 32px;
+    cursor: pointer;
+    
+
+}
+#form .control .fas{
+    color: red;
+
+}
+#form .control .far {
+    color: grey;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style/app.css">
+
+    <title>Task Manager</title>
+</head>
+
+
+
+<body>
+
+
+    <h1>Welcome to my task manager</h1>
+
+   <main class="main">
+
+        <section id="list">
+
+            <h5 id="headCount"></h5>
+
+            <button id="btnClearAll" class="btn btn-sm btn-danger">Clear All Tasks</button>
+
+            <button id="btnTogglePanel" class="btn btn-sm btn-primary">Hide/Show Task Information</button>
+
+            <div></div>
+
+
+
+        </section>
+        
+        <section id="form">
+
+            <h3>Task Information</h3>
+
+            
+            <div class="capture-form">
+            
+            <div class="control">
+                <label class="form-label">Important: </label>
+                <i id="iImportant" class= "iImportant fas fa-star"></i>
+            </div>
+            <div class="control">
+                <label class="form-label">Task Name: </label>
+                <input id="txtTaskName" type="text" class="form-control">
+            </div>
+            
+            <div class="control">
+                <label class="form-label">Description: </label>
+                <textarea rows="5" class="form-control" id="txtDescription"></textarea>
+            </div>
+            <div class="control">
+                <label class="form-label">Due Date: </label>
+                <input id="selDueDate" type="datetime-local" class="form-control">
+            </div>
+            <div class="control">
+                <label class="form-label">Location: </label>
+                <input id = "txtLocation" type="text" class="form-control">
+            </div>
+
+            <div class="control">
+                <label class="form-label">Invites: </label>
+                <input id="txtInvites" type="text" class="form-control">
+            </div>
+           
+            <div class="control">
+                <label class="form-label">Color: </label>
+                <input id="selColor" type="color" class="form-control">
+                
+                
+            </div>
+
+            <div class="control">
+                <label class="form-label">Frequency:</label>
+                <select id ="selFrequency" class="form-select">
+                    <option value="0">One-Time</option>
+                    <option value="1">Daily</option>
+                    <option value="2">Weekly</option>
+                    <option value="3">Monthly</option>
+                </select>
+            </div>
+            <div class="control">
+                <label class="form-label">Status: </label>
+                <select id="selStatus" class="form-select">
+                    <option value="1">Pending</option>
+                    <option value="2">In-Progress</option>
+                    <option value="3">Paused</option>
+                    <option value="4">Completed</option>
+                    <option value="5">Abandoned</option>
+
+                </select>
+            </div>
+
+            <div class="control text-center pb-1">
+                <button id="btnSave" class="btn btn-dark mt-1">Save Task</button>
+            
+            </div>
+
+            </div>
+
+           
+
+
+
+
+
+        </section>
+
+
+   </main>
+    
+
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="scripts/app.js"></script>
+   <script src="/scripts/task.js"></script>
+   <script src="/scripts/app.js"></script>
+
+
+
+
+</body>
+</html>
